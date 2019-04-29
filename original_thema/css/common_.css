@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+/*---------------------------------
+	CSS 2016.10.20
+	CSS 担当者名:小林
+	Last Update 2010.00.00 担当者名
+---------------------------------*/
+
+/*ベースのCSSの設定
+----------------------------------------------------------------*/
+/*サイト全体の基本情報の設定*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: '游ゴシック体', 'Yu Gothic', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	line-height: 1.6;
+	letter-spacing: 0.1em;
+	color: #333333;
+	font-weight: normal;
+	font-style: normal;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+img {
+	border: none;
+	vertical-align: bottom;  /* 画像の下の隙間をなくす */
+}
+th, td {
+	vertical-align: top;
+	border-collapse: collapse;
+	text-align: left;
+	font-size: inherit;
+}
+ul,ol,li {
+	list-style: none;
+	text-align: left;
+	list-style-position: outside;
+	font-size: 100%;
+}
+p {
+	font-size: 1em;
+	text-align: left;
+	margin-bottom: 5px;
+}
+a {
+	outline: none; /* リンクをクリックした時に点線が残るのを消す */
+	font-size: inherit;
+	font-weight: inherit;
+}
+.clearfix:after {
+	overflow: hidden;
+	visibility: hidden;
+	height: 0;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+}
+@media screen and (max-width: 640px) {
+img {
+	max-width: 100%;
+	height: auto;
+}
+}
+
+/*【共通】レイアウト
+----------------------------------------------------------------*/
+body {
+	zoom: 1; /* IE用 */
+	border: 0;
+	font-size: 1em
+}
+#wrapper {
+	zoom: 1; /* IE用 */
+	margin: 0 auto;
+}
+#contents { /* border: 1px solid red; */
+	margin: 0 auto;
+	zoom: 1; /* IE用 */
+}
+#contents:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden; 
+}
+
+/*【共通】パーツ
+----------------------------------------------------------------*/
+/* リンク */
+a:link, a:visited {
+	color: #333;
+	text-decoration: none;
+}
+
+/* 配置 */
+#conbox .f_left {
+	float: left;
+	text-align: center;
+	line-height: 2;
+}
+#conbox .f_right {
+	float: right;
+	text-align: center;
+	line-height: 2;
+}
+#conbox .leftOn {
+	text-align: left;
+}
+#conbox .rightOn {
+	text-align: right;
+}
+#conbox .centerOn {
+	text-align: center;
+}
+
+/* ライン */
+hr.nml {
+	margin: 5px 0;
+	width: 100%;
+	border-top: solid 1px #CCCCCC;
+	color: #CCCCCC;
+}
+hr.dot {
+	margin: 5px 0;
+	border: 0;
+	border-top: dotted 1px #CCCCCC;
+	color: #CCCCCC;
+}
+hr.dash {
+	margin: 5px 0;
+	border: 0;
+	border-top: dashed 1px #CCCCCC;
+	color: #CCCCCC;
+}
+
+/* 強調文字 */
+.attn1 {
+	font-size: 105%;
+	font-style: normal;
+	font-weight: bold;
+}
+
+/*基本設定
+----------------------------------------------------------------*/
+/* 装飾 */
+#conbox .v_bottom {vertical-align:bottom;}
+#conbox .border_bd {border-bottom:1px dashed #ccc;}
+#conbox .border_bs {border-bottom:1px solid #ccc;}
+#conbox .st {font-weight:bold;}
+#conbox .red {color:#ca0303;}
+
+/* 文字サイズ */
+#conbox .font7 {font-size:0.43em;}
+#conbox .font8 {font-size:0.5em;}
+#conbox .font9 {font-size:0.56em;}
+#conbox .font10 {font-size:0.63em;}
+#conbox .font11 {font-size:0.688em;}
+#conbox .font12 {font-size:0.75em;}
+#conbox .font13 {font-size:0.813em;}
+#conbox .font14 {font-size:0.88em;}
+#conbox .font15 {font-size:0.938em;}
+#conbox .font16 {font-size:1em;}
+#conbox .font17 {font-size:1.06em;}
+#conbox .font18 {font-size:1.13em;}
+#conbox .font19 {font-size:1.19em;}
+#conbox .font20 {font-size:1.25em;}
+#conbox .font21 {font-size:1.31em;}
+#conbox .font22 {font-size:1.38em;}
+#conbox .font23 {font-size:1.44em;}
+#conbox .font24 {font-size:1.5em;}
+#conbox .font25 {font-size:1.56em;}
+#conbox .font26 {font-size:1.63em;}
+#conbox .font27 {font-size:1.69em;}
+#conbox .font28 {font-size:1.75em;}
+#conbox .font29 {font-size:1.81em;}
+#conbox .font30 {font-size:1.88em;}
+
+/* 上余白 */
+#conbox .mt0 {margin-top:0px;}
+
+/* 下余白 */
+#conbox .mb0 {margin-bottom:0px;}
+#conbox .mb10 {margin-bottom:10px;}
+#conbox .mb15 {margin-bottom:15px;}
+#conbox .mb20 {margin-bottom:20px;}
+#conbox .mb30 {margin-bottom:30px;}
+#conbox .mb40 {margin-bottom:40px;}
+#conbox .mb50 {margin-bottom:50px;}
+#conbox .mb60 {margin-bottom:60px;}
+#conbox .mb70 {margin-bottom:70px;}
+#conbox .mb80 {margin-bottom:80px;}
+#conbox .mb90 {margin-bottom:90px;}
+
+/* 左余白 */
+#conbox .ml0 {margin-left:0px;}
+#conbox .ml10 {margin-left:10px;}
+#conbox .ml15 {margin-left:15px;}
+#conbox .ml20 {margin-left:20px;}
+#conbox .ml30 {margin-left:30px;}
+#conbox .ml40 {margin-left:40px;}
+#conbox .ml50 {margin-left:50px;}
+#conbox .ml60 {margin-left:60px;}
+#conbox .ml70 {margin-left:70px;}
+#conbox .ml80 {margin-left:80px;}
+#conbox .ml90 {margin-left:90px;}
+
+/* エディター関係 */
+#conbox strong {font-weight:bold;}
